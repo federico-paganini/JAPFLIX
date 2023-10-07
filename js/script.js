@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     btnbuscar.addEventListener("click", () => {
         if (barrabusqueda.value !== "") {
             const tituloIngresado = barrabusqueda.value.toLowerCase();
+            bloquePeliculas.innerHTML = "";
 
             listado.forEach(pelicula => {
                 const titulo = pelicula.title.toLowerCase();
